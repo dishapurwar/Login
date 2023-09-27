@@ -1,0 +1,11 @@
+import { Schema, model } from 'mongoose'
+
+const StudentSchema = new Schema({
+    name: String,
+    email: String,
+    enroll: String,
+    password: String
+})
+
+const StudentModel = model("students",StudentSchema)
+export default StudentModel
